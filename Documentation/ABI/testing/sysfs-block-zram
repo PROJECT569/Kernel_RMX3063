@@ -22,8 +22,6 @@ Description:
 		device. The reset operation frees all the memory associated
 		with this device.
 
-<<<<<<< HEAD
-=======
 What:		/sys/block/zram<id>/num_reads
 Date:		August 2010
 Contact:	Nitin Gupta <ngupta@vflare.org>
@@ -59,7 +57,6 @@ Description:
 		The failed_writes file is read-only and specifies the number of
 		failed writes happened on this device.
 
->>>>>>> 60336136bf131627b4ccd3325796b54feddb762d
 What:		/sys/block/zram<id>/max_comp_streams
 Date:		February 2014
 Contact:	Sergey Senozhatsky <sergey.senozhatsky@gmail.com>
@@ -76,8 +73,6 @@ Description:
 		available and selected compression algorithms, change
 		compression algorithm selection.
 
-<<<<<<< HEAD
-=======
 What:		/sys/block/zram<id>/notify_free
 Date:		August 2010
 Contact:	Nitin Gupta <ngupta@vflare.org>
@@ -128,39 +123,32 @@ Description:
 		statistic.
 		Unit: bytes
 
->>>>>>> 60336136bf131627b4ccd3325796b54feddb762d
 What:		/sys/block/zram<id>/mem_used_max
 Date:		August 2014
 Contact:	Minchan Kim <minchan@kernel.org>
 Description:
-<<<<<<< HEAD
 		The mem_used_max file is write-only and is used to reset
 		the counter of maximum memory zram have consumed to store
 		compressed data. For resetting the value, you should write
 		"0". Otherwise, you could see -EINVAL.
-=======
 		The mem_used_max file is read/write and specifies the amount
 		of maximum memory zram have consumed to store compressed data.
 		For resetting the value, you should write "0". Otherwise,
 		you could see -EINVAL.
->>>>>>> 60336136bf131627b4ccd3325796b54feddb762d
 		Unit: bytes
 
 What:		/sys/block/zram<id>/mem_limit
 Date:		August 2014
 Contact:	Minchan Kim <minchan@kernel.org>
 Description:
-<<<<<<< HEAD
 		The mem_limit file is write-only and specifies the maximum
 		amount of memory ZRAM can use to store the compressed data.
 		The limit could be changed in run time and "0" means disable
 		the limit. No limit is the initial state.  Unit: bytes
-=======
 		The mem_limit file is read/write and specifies the maximum
 		amount of memory ZRAM can use to store the compressed data.  The
 		limit could be changed in run time and "0" means disable the
 		limit.  No limit is the initial state.  Unit: bytes
->>>>>>> 60336136bf131627b4ccd3325796b54feddb762d
 
 What:		/sys/block/zram<id>/compact
 Date:		August 2015
@@ -195,7 +183,6 @@ Description:
 		device's debugging info useful for kernel developers. Its
 		format is not documented intentionally and may change
 		anytime without any notice.
-<<<<<<< HEAD
 
 What:		/sys/block/zram<id>/backing_dev
 Date:		June 2017
@@ -243,5 +230,3 @@ Description:
 		The writeback_limit file is read-write and specifies the maximum
 		amount of writeback ZRAM can do. The limit could be changed
 		in run time.
-=======
->>>>>>> 60336136bf131627b4ccd3325796b54feddb762d
